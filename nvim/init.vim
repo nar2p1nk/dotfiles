@@ -1,5 +1,36 @@
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  " Required:
+  set runtimepath+=/home/antagonist/.config/nvim/bundle/neobundle.vim/
+endif
 
+" Required:
+call neobundle#begin(expand('/home/antagonist/.config/nvim/bundle'))
 
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
@@ -72,9 +103,9 @@ runtime ./maps.vim
 " true color
 
 let g:lightline = {
-	\ 'colorscheme': 'molokai',
+	\ 'colorscheme': 'PaperColor',
       \ }
-
+let g:rainbow_active = 1
 if exists("&termguicolors") && exists("&winblend")
   syntax enable
   set termguicolors
@@ -82,7 +113,7 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=light
-  colorscheme tokyonight
+  colorscheme badwolf
 endif
 
 "}}}
@@ -91,12 +122,13 @@ endif
 " ---------------------------------------------------------------------
 set exrc
 
-nnoremap <M-1> :FZF<CR>
+nnoremap <M-1> :lua require'telescope.builtin'.file_browser{}<CR>
 nnoremap <M-s> :w<CR>
 nnoremap <M-q> :q<CR>
-nnoremap <C-Space> :SpToggle<CR>
+nnoremap <C-p> :SpToggle<CR>
 nnoremap <C-p> :SpPrevious<CR>
 nnoremap <C-]> :SpNext<CR>
+nnoremap <C-b> :NERDTreeToggle<cr>
 set noshowmode
 "}}}
 
