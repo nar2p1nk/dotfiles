@@ -103,7 +103,7 @@ runtime ./maps.vim
 " true color
 
 let g:lightline = {
-	\ 'colorscheme': 'PaperColor',
+	\ 'colorscheme': 'tokyonight',
       \ }
 let g:rainbow_active = 1
 if exists("&termguicolors") && exists("&winblend")
@@ -112,8 +112,9 @@ if exists("&termguicolors") && exists("&winblend")
   set winblend=0
   set wildoptions=pum
   set pumblend=5
-  set background=light
-  colorscheme badwolf
+  set background=dark
+  colorscheme tokyonight
+  " other colorschemes: neodark,nord,tokyonight,badwolf"
 endif
 
 "}}}
