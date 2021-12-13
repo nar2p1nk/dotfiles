@@ -11,11 +11,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'HendrikPetertje/vimify'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'posva/vim-vue'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'posva/vim-vue'
+Plug 'leafOfTree/vim-vue-plugin'
 Plug 'luochen1990/rainbow'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
+Plug 'leafOfTree/vim-matchtag'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'wuelnerdotexe/vim-enfocado'
 if has("nvim")
 "  Plug 'hoob3rt/lualine.nvim'
@@ -33,8 +37,8 @@ if has("nvim")
 "  Plug 'kyazdani42/nvim-web-devicons'
 "  Plug 'onsails/lspkind-nvim'
 "  Plug 'nvim-lua/popup.nvim'
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
+"  Plug 'nvim-lua/plenary.nvim'
+"  Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-autopairs'
 endif
 Plug 'groenewege/vim-less', { 'for': 'less' }

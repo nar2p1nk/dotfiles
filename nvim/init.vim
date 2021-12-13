@@ -103,11 +103,13 @@ runtime ./maps.vim
 " true color
 
 let g:lightline = {
-	\ 'colorscheme': 'tokyonight',
+	\ 'colorscheme': 'molokai',
       \ }
 let g:rainbow_active = 1
-if exists("&termguicolors") && exists("&winblend")
+if exists("&termguicolors") && exists("&winblend") && exists('+termguicolors')
   syntax enable
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
   set winblend=0
   set wildoptions=pum
@@ -120,16 +122,34 @@ endif
 "}}}
 
 " Extras "{{{
-" ---------------------------------------------------------------------
+" ------------------------------------------------------------------
 set exrc
 
-nnoremap <M-1> :lua require'telescope.builtin'.file_browser{}<CR>
+nnoremap <M-1> :FZF<CR>
 nnoremap <M-s> :w<CR>
 nnoremap <M-q> :q<CR>
-nnoremap <C-p> :SpToggle<CR>
-nnoremap <C-p> :SpPrevious<CR>
+nnoremap <C-space> :SpToggle<CR>
+nnoremap <C-o> :SpPrevious<CR>
 nnoremap <C-]> :SpNext<CR>
 nnoremap <C-b> :NERDTreeToggle<cr>
+
 set noshowmode
+
+
+let g:vim_vue_plugin_config = { 
+      \'syntax': {
+      \   'template': ['html'],
+      \   'script': ['javascript'],
+      \   'style': ['css'],
+      \},
+      \'full_syntax': [],
+      \'initial_indent': [],
+      \'attribute': 0,
+      \'keyword': 0,
+      \'foldexpr': 0,
+      \'debug': 0,
+      \}
+
+
 "}}}
 
