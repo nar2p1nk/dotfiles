@@ -36,7 +36,7 @@ NeoBundleCheck
 " ---------------------------------------------------------------------
 set cursorline
 "set cursorcolumn
-set number
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
