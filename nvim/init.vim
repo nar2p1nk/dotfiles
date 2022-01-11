@@ -131,7 +131,7 @@ nnoremap <M-q> :q<CR>
 nnoremap <C-space> :SpToggle<CR>
 nnoremap <C-o> :SpPrevious<CR>
 nnoremap <C-]> :SpNext<CR>
-nnoremap <C-b> :NERDTreeToggle<cr>
+nnoremap <M-m> :NERDTreeToggle<cr>
 
 set noshowmode
 
