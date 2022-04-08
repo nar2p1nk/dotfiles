@@ -3,6 +3,7 @@
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/antagonist/\x2econfig/fish/functions/fisher\x2efish\x1e/home/antagonist/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
+SETUVAR chain_links:chain\x2elinks\x2eroot\x1echain\x2elinks\x2ejobs\x1echain\x2elinks\x2epwd\x1echain\x2elinks\x2evcs_branch\x1echain\x2elinks\x2evcs_dirty\x1echain\x2elinks\x2evcs_stashed
 SETUVAR fish_color_autosuggestion:3BA3D0
 SETUVAR fish_color_cancel:normal
 SETUVAR fish_color_command:5f87ff

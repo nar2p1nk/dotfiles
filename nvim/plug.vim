@@ -16,9 +16,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'luochen1990/rainbow'
 Plug 'sheerun/vim-polyglot'
-Plug 'preservim/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'leafOfTree/vim-matchtag'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+Plug 'wadackel/vim-dogrun'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'wuelnerdotexe/vim-enfocado'
 if has("nvim")
