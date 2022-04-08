@@ -1,47 +1,14 @@
-"NeoBundle Scripts-----------------------------
-if has('vim_starting')
-  " Required:
-  set runtimepath+=/home/antagonist/.config/nvim/bundle/neobundle.vim/
-endif
-
-" Required:
-call neobundle#begin(expand('/home/antagonist/.config/nvim/bundle'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------
-
 " Highlights "{{{
 " ---------------------------------------------------------------------
+au BufNewFile,BufRead *.ejs set filetype=html
 set cursorline
 "set cursorcolumn
 set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-let g:user_emmet_leader_key='<C-Z>'
+set termguicolors
+let g:user_emmet_leader_key='<C-z>'
 
 " Set cursor line color on visual mode
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
@@ -103,8 +70,9 @@ runtime ./maps.vim
 " true color
 
 let g:lightline = {
-	\ 'colorscheme': 'molokai',
+	\ 'colorscheme': 'spaceduck',
       \ }
+" colorscheme spaceduck dogrun badwolf
 let g:rainbow_active = 1
 if exists("&termguicolors") && exists("&winblend") && exists('+termguicolors')
   syntax enable
@@ -115,8 +83,9 @@ if exists("&termguicolors") && exists("&winblend") && exists('+termguicolors')
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  colorscheme tokyonight
-  " other colorschemes: neodark,nord,tokyonight,badwolf"
+  colorscheme shado
+  hi Normal guibg=NONE ctermbg=NONE
+  " other colorschemes: neodark,nord,tokyonight,badwolf,dogrun,spaceduck"
 endif
 
 "}}}
@@ -129,8 +98,8 @@ nnoremap <M-1> :FZF<CR>
 nnoremap <M-s> :w<CR>
 nnoremap <M-q> :q<CR>
 nnoremap <C-space> :SpToggle<CR>
-nnoremap <C-o> :SpPrevious<CR>
-nnoremap <C-]> :SpNext<CR>
+nnoremap <M-[> :SpPrevious<CR>
+noremap <M-]> :SpNext<CR>
 nnoremap <M-m> :NERDTreeToggle<cr>
 
 set noshowmode

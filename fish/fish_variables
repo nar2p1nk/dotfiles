@@ -1,8 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BUN_INSTALL:/home/enemy/\x2ebun
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/antagonist/\x2econfig/fish/functions/fisher\x2efish\x1e/home/antagonist/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
+SETUVAR chain_links:chain\x2elinks\x2eroot\x1echain\x2elinks\x2ejobs\x1echain\x2elinks\x2epwd\x1echain\x2elinks\x2evcs_branch\x1echain\x2elinks\x2evcs_dirty\x1echain\x2elinks\x2evcs_stashed
 SETUVAR fish_color_autosuggestion:3BA3D0
 SETUVAR fish_color_cancel:normal
 SETUVAR fish_color_command:5f87ff
@@ -26,6 +28,7 @@ SETUVAR fish_color_selection:c0c0c0
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:00ff00
 SETUVAR fish_color_valid_path:normal
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow

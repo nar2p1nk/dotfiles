@@ -3,7 +3,13 @@ if has("nvim")
 endif
 
 call plug#begin()
-
+Plug 'Shadorain/shadotheme'
+Plug 'kevinoid/vim-jsonc'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'calviken/vim-gdscript3'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug 'sunjon/shade.nvim'
 "Plug 'tpope/vim-fugitive'
 "Plug 'tpope/vim-rhubarb'
 Plug 'ghifarit53/tokyonight-vim'
@@ -14,11 +20,17 @@ Plug 'HendrikPetertje/vimify'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'posva/vim-vue'
 Plug 'leafOfTree/vim-vue-plugin'
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
 Plug 'luochen1990/rainbow'
 Plug 'sheerun/vim-polyglot'
-Plug 'preservim/nerdtree'
+Plug 'scrooloose/nerdtree'
 Plug 'leafOfTree/vim-matchtag'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'wadackel/vim-dogrun'
+Plug 'stevearc/vim-arduino'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'wuelnerdotexe/vim-enfocado'
 if has("nvim")
@@ -42,7 +54,7 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
 endif
 Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+"Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 call plug#end()
 
